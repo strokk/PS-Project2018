@@ -30,4 +30,4 @@ print(iris.describe())
 
 # Creating a Histogram of data using matplotlib
 iris.hist()
-plt.show()
+pl.show()
