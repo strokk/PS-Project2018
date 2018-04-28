@@ -69,7 +69,7 @@ For some further analysis, I have checked the Min, Mean, Max and Std separately 
 <p align="center"><img src="https://raw.githubusercontent.com/strokk/PS-Project2018/master/images/Pivot%20table.PNG" width=450px></p><br><p align="center">Statistical analysis for each class</p>
 
 
-Now we can have a better understanding of the species and their correlation and also separately, but looking at the numbers makes it harder to comprehend the analysis, thus as follows I have generated some plots to facilitate the visualization.
+Now we can have a better understanding of the species and their correlation and also separately, but only looking at the numbers it's a bit hard to comprehend the analysis, therefore as follows I have generated some plots to facilitate the visualization.
 
 #### Plots
 
