@@ -36,9 +36,12 @@ Based on Fisher's linear discriminant model, this data set became a typical test
 
 ### HOW TO RUN THE CODE
 
-* First you will need to install an interpreter, such as Visual Studio Code, which was the one used for this project, where you can download at: https://code.visualstudio.com/download and all the necessary libraries used in this code, such as pandas, numpy, matplotlib and seaborn, but to make it easier you may install the Anaconda package: https://www.anaconda.com/download/
+* First you will need to install an interpreter, such as Visual Studio Code, which was the one used for this project, where you can download at: https://code.visualstudio.com/download and all the necessary libraries to run this code, such as pandas, numpy, matplotlib and seaborn, but to make it easier you may install the Anaconda package: https://www.anaconda.com/download/
 
-* Secondly, download both the dataset file iris.csv and file project.py and open them in the same folder with your interpreter and run the code by typing: python project.py
+* Secondly, download both the dataset file iris.csv and file project.py and open them in the same folder with your interpreter and run the code by typing the command: python project.py
+
+* Alternatively you may clone this repository from Github by typing the command below:
+git clone https://github.com/strokk/PS-Project2018.git
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -60,8 +63,13 @@ Based on Fisher's linear discriminant model, this data set became a typical test
 #### Dataset Statistcal Analysis
 
 * Moving to the statistical analysis first I started using numpy to check for the mean of each attribute, but later found out that there is a pandas code (describe) that could check the total count, means, standard deviations, min, 25%, 50%, 75% and max. And this function is interesting, where I could visualize, for example that the sepal length goes from 4.3cm up to 7.9cm and with a mean of 5.84cm. For more information the table is shown below:
-<p align="center"><img src="https://raw.githubusercontent.com/strokk/PS-Project2018/master/images/describe.PNG" width=450px></p><br><p align="center">Some Statistical Analysis</p>
+<p align="center"><img src="https://raw.githubusercontent.com/strokk/PS-Project2018/master/images/describe.PNG" width=450px></p><br><p align="center">Statistical analysis</p>
 
+For some further analysis, I have checked the Min, Mean, Max and Std separately from each class, as shown here:
+<p align="center"><img src="https://raw.githubusercontent.com/strokk/PS-Project2018/master/images/Pivot%20table.PNG" width=450px></p><br><p align="center">Statistical analysis for each class</p>
+
+
+Now we can have a better understanding of the species and their correlation and also separately, but looking at the numbers makes it harder to comprehend the analysis, thus as follows I have generated some plots to facilitate the visualization.
 
 #### Plots
 
@@ -97,6 +105,9 @@ As demonstrated above, the scatter plot is the most complex plot used on this pr
 ### CONCLUSION
 
 
+Before commencing this online course, I had practilly zero coding experience, only some basic HTML and Java knowledge, on the beginning of lessons I was a bit lost with so much information, specially regarding the Euler exercises, but I decided to try and gather as much information as I could doing researches and watching Youtube videos, and after a while every little piece started to make sense, and when I started this project I had already some better understanding regarding Python, but it was only doing this project that I could actually understand in more depth all the libraries available to use along with Python and to apply all the skills learned throughout the course, and I realised that what could take me hours to do could be easily accomplished with the proper library and some investigation.
+
+And I must say, this project was really interesting, considering that you can do so much with Data Analytics, and this project is an example, you can take a simple flower, with its 3 different species, and when you correlate those attributes together you can gather so much information from it.
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
