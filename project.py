@@ -15,24 +15,43 @@ iris = pd.read_csv("iris.csv", names = ["Sepal Length", "Sepal Width", "Petal Le
 #DATASET ANALYSIS
 #Printing some data just for visualization
 print(iris.sample(10))
+print()
 
 # Printing the rows and columns of the data using the shape property:
 print("The iris dataset has", iris.shape, "rows and columns respectively")
+print()
 
 # Class Distribution
 print(iris.groupby('Class').size())
+print()
 
 #Calculating the mean of each column using numpy
 print("This is the mean value for each column: \n", np.mean(iris))
+print()
 
 #Calculating the max of each column using numpy
 print("This is the maximum value for each column: \n",np.max(iris))
+print()
 
 #Calculating the min of each column using numpy
 print("This is the minimum value for each column: \n",np.min(iris))
+print()
 
 #For better visualization, the pandas library shows a better summary of the data, such as mean, max, min, std
 print(iris.describe())
+print()
+
+#Used pands pivot table to generate the Min, Mean and Max for each class
+
+print("Min for each class: \n", pd.pivot_table(iris, index=['Class'], aggfunc='min'))
+print()
+print("Mean for each class: \n", pd.pivot_table(iris, index=['Class'], aggfunc='mean'))
+print()
+print("Max for each class: \n", pd.pivot_table(iris, index=['Class'], aggfunc='max'))
+print()
+print("Std for each class: \n", pd.pivot_table(iris, index=['Class'], aggfunc='std'))
+print()
+
 
 
 #CHARTS
