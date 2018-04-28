@@ -69,6 +69,8 @@ Just as a brief explanation, a histogram is a plot that shows the underlying fre
 First I used Matplotlib to generated a single histogram for each attribute separately, and those images can be found at the images folder, later I have made a single histogram containing all the 4 attributes for better demonstration as shown below:
 <p align="center"><img src="https://raw.githubusercontent.com/strokk/PS-Project2018/master/images/iris_histogram.png" width=500px></p><br><p align="center">Histogram of attributes</p>
 
+As we can see from the histograms they are very easy to interpret and can give us some good information, for example the Petal Lengh and the Petal Width looks to diverge from the normal distribution, whereas Sepal Lengh and Sepal Width seems to be more symmetric and unimodal.
+
 * Next I have generated a Box and Whisker plot:
 A box and whisker plot displays the variation in a set of data. This kind of plot can provide additional detail while allowing multiple sets of data to be displayed in the same graph. They summarize data from multiple sources and display the results in a single graph. Box and whisker plots allow for comparison of data from different categories for easier, more effective decision-making. A box and whisker plot is developed from five statistics, min value, second, quartile, median value, third quartile and max value. [4]
 
@@ -77,9 +79,13 @@ A box and whisker plot displays the variation in a set of data. This kind of plo
 * Scatter Plot
 A scatter plot is a type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data. If the points are color-coded, one additional variable can be displayed. The data are displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis. A scatter plot can suggest various kinds of correlations between variables with a certain confidence interval. For example, weight and height, weight would be on y axis and height would be on the x axis. Correlations may be positive (rising), negative (falling), or null (uncorrelated). If the pattern of dots slopes from lower left to upper right, it indicates a positive correlation between the variables being studied. If the pattern of dots slopes from upper left to lower right, it indicates a negative correlation [5]
 
-First I used a function from pandas to generate the scatter plot, but later switched to a function from seaborn, where I generated one single image with various graphs containing all 4 attributes and their correlations, as demonstrated below:
+First I used a function from pandas to generate the scatter plot, but later switched to a function from seaborn, where I generated one single image with various graphs containing all 4 attributes and their correlations between the 3 Classes, as demonstrated below:
 
 <p align="center"><img src="https://raw.githubusercontent.com/strokk/PS-Project2018/master/images/iris_pairplot.png" width=700px></p><br><p align="center">Scatter Plot</p>
+
+
+As demonstrated above, the scatter plot is the most complex plot used on this project, which can demonstrate most of the correlation between the attributes among the Iris dataset. From the plot we can notice that Iris Setosa is completely separataed from the other two classes across all feature combinations, only on Sepal Length and Sepal Width that they are slightly correlated. 
+
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
