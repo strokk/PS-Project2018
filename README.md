@@ -91,5 +91,6 @@ First I used a function from pandas to generate the scatter plot, but later swit
 [5] https://en.wikipedia.org/wiki/Scatter_plot
 
 
-
+** OTHER CODING REFERENCES
+https://seaborn.pydata.org/generated/seaborn.pairplot.html
 
