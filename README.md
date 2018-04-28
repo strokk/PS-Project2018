@@ -93,4 +93,6 @@ First I used a function from pandas to generate the scatter plot, but later swit
 
 ** OTHER CODING REFERENCES
 https://seaborn.pydata.org/generated/seaborn.pairplot.html
+https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html
+https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
 
