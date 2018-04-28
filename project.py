@@ -6,7 +6,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as pl
-import seaborn as sb
+import seaborn as sns
 
 # Importing the dataset from iris.csv file
 iris = pd.read_csv("iris.csv", names = ["Sepal Length", "Sepal Width", "Petal Length", "Petal Width", "Class"])
@@ -83,22 +83,8 @@ pl.ylabel('cm')
 pl.savefig('iris_box_and_whisker_plot.png')
 pl.show()
 
-#Generating a single line chart for all Classes
-iris.plot()
-pl.title('Iris Line Chart')
-pl.xlabel('Sample Number')  
-pl.ylabel('cm') 
-pl.savefig('iris_linechart.png')
-pl.show() 
-
-#Scatter Plot Matrix
-from pandas.plotting import scatter_matrix
-scatter_matrix(iris, figsize=(8,8))
-pl.savefig('iris_scattermatrix.png')
-pl.show()
-
-# Use of Seaborn Pairplot to check the bivariate relation between each pair of features
-sb.pairplot(iris, hue="Class")
+# Use of seaborn pairplot to check the bivariate relation between each pair of attributes and generate a scatter plot
+sns.pairplot(iris, hue="Class", markers=["o", "s", "D"])
 pl.title('Iris Pair Plot')
 pl.savefig('iris_pairplot.png')
 pl.show()
